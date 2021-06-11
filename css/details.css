@@ -1,0 +1,81 @@
+.dt-main {
+  margin: 100px 40px;
+  width: 1380px;
+  height: 100%;
+  display: flex;
+}
+.dt-show {
+  width: 1235px;
+}
+.dt-show-img {
+  width: 1182px;
+  height: 820px;
+}
+.dt-show-img img {
+  margin: 0 7px 10px 0;
+  width: 547px;
+  height: 820px;
+}
+.dt-show-text {
+  margin-top: 40px;
+  height: 820px;
+  width: 250px;
+}
+.dt-show-text h2 {
+  font-weight: bold;
+}
+.dt-show-text1 {
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.dt-show-text1 .number {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+.number p {
+  width: 106px;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  padding: 8px 0;
+  text-align: center;
+}
+.number a {
+  width: 40px;
+  color: #474747;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 0;
+}
+.dt-show-text1 .btn {
+  border: 1px solid #e0e0e0;
+  height: 35px;
+  line-height: 17px;
+  width: 230px;
+  padding: 7px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.dt-show-text1 h6 {
+  color: #8e8e93;
+}
+.tishi p {
+  display: none;
+}
+.tishi h5 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.dt-show-text1 .price {
+  font-size: 22px;
+}
+.dt-show-text1 div p {
+  color: #8e8e93;
+}
+#tobuy {
+  background-color: #0047ba;
+  color: #fff;
+}

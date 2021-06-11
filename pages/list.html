@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/list.css" />
+    <script src="../js/ajax.js"></script>
+    <script src="../js/pagination.js"></script>
+
+    <title>列表页</title>
+  </head>
+  <body>
+    <!-- logo -->
+    <div class="logo">
+      <a href="../index.html"><img src="../image/logo.png" alt="" /></a>
+    </div>
+    <!-- head-menu-->
+    <div class="head-menu">
+      <span>
+        <i>🔍</i>
+        <b>搜索</b>
+      </span>
+      <span>
+        <b>店铺</b>
+      </span>
+      <span>
+        <b>国家</b>
+      </span>
+      <span>
+        <b>帮助</b>
+      </span>
+      <span>
+        <b class="useruState">账户</b>
+      </span>
+      <span class="buycart">
+        <i>🛍️</i>
+        <b>购物袋</b>
+      </span>
+    </div>
+    <!-- 侧边栏 -->
+    <div class="left-menu1">
+      <b>三</b>
+      <div class="left-menu">
+        <ul>
+          <li>
+            宋妍霏同款
+            <ul>
+              <li>宋妍霏同款</li>
+            </ul>
+          </li>
+          <li>
+            大片同款
+            <ul>
+              <li>全部</li>
+            </ul>
+          </li>
+          <li>
+            【UR LAB】
+            <ul>
+              <li>【UR✖️PrivatePolicy】</li>
+            </ul>
+          </li>
+          <li>
+            低至5折
+            <ul>
+              <li>全部</li>
+              <li>连衣裙</li>
+              <li>衬衫/T恤</li>
+              <li>针织</li>
+              <li>薄外套</li>
+              <li>下装</li>
+              <li>男下装</li>
+              <li>男上装</li>
+              <li>配饰</li>
+            </ul>
+          </li>
+          <li>
+            迪士尼系列
+            <ul>
+              <li>勇敢传说</li>
+              <li>全部</li>
+              <li>猪小姐</li>
+              <li>米奇和它的朋友们</li>
+              <li>玩具总动员</li>
+              <li>布偶大电影</li>
+              <li>唐老鸭</li>
+              <li>三只小猪</li>
+              <li>...</li>
+              <li>...</li>
+              <li>...</li>
+              <li>...</li>
+              <li>...</li>
+              <li>...</li>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>
+            每周新品
+            <ul>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>
+            #OOTD
+            <ul>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>
+            新疆棉专区
+            <ul>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>
+            女士
+            <ul>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>
+            男士
+            <ul>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>
+            鞋包/配饰
+            <ul>
+              <li>...</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 商品列表 -->
+    <div class="main">
+      <ul class="right-tab">
+        <li>🌟</li>
+        <li>⬇️⬇️</li>
+        <li>|&nbsp;&nbsp;<span>19</span>商品</li>
+        <li>|&nbsp;&nbsp;+筛选</li>
+      </ul>
+      <div class="shoplist"></div>
+      <!-- 分页器 -->
+      <div class="pagination"></div>
+    </div>
+
+    <!--底部 -->
+    <div class="footer-con">
+      <div class="footer">
+        <div class="footer-main">
+          <div class="service">
+            <ul>
+              <li onclick="showDialog('.helpdiv')" style="cursor: pointer">
+                <i class="icon-png arrow-message"></i><span>在线聊天</span>
+              </li>
+              <li onclick="showDialog('.helpdiv')" style="cursor: pointer">
+                <i class="icon-png arrow-phone"></i><span>电话</span>
+              </li>
+              <li onclick="showDialog('.helpdiv')" style="cursor: pointer">
+                <i class="icon-png arrow-email"></i><span>电子邮件</span>
+              </li>
+            </ul>
+            <div>
+              <p class="copyright">
+                ©2016 URBAN REVIVO ALL RIGHTS RESERVED
+                <a href="http://beian.miit.gov.cn" target="_blank"
+                  >粤ICP备13081728号</a
+                >
+              </p>
+              <div style="width: 300px; padding: 0 0 10px">
+                <a
+                  target="_blank"
+                  href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102002716"
+                  style="
+                    display: inline-block;
+                    text-decoration: none;
+                    height: 20px;
+                    line-height: 20px;
+                  "
+                >
+                  <img
+                    src="../image/jinghui.jpeg"
+                    style="float: left; width: 20px"
+                  />
+                  <p
+                    style="
+                      float: left;
+                      height: 20px;
+                      line-height: 20px;
+                      margin: 0px 0px 0px 5px;
+                      color: #939393;
+                    "
+                  >
+                    粤公网安备 44011102002716号
+                  </p></a
+                >
+              </div>
+              <div style="width: 300px; padding: 0 0 10px">
+                <a
+                  target="_blank"
+                  href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102002717"
+                  style="
+                    display: inline-block;
+                    text-decoration: none;
+                    height: 20px;
+                    line-height: 20px;
+                  "
+                >
+                  <img
+                    src="../image/jinghui.jpeg"
+                    style="float: left; width: 20px"
+                  />
+                  <p
+                    style="
+                      float: left;
+                      height: 20px;
+                      line-height: 20px;
+                      margin: 0px 0px 0px 5px;
+                      color: #939393;
+                    "
+                  >
+                    粤公网安备 44011102002717号
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sub">
+            <div class="mr180">
+              <p><i class="icon-png arrow-address"></i><span>门店位置</span></p>
+              <p>寻找距离您最近的URBAN REVIVO门店</p>
+              <br />
+              <div class="layui-input-block" style="margin-left: 0px">
+                <input
+                  type="text"
+                  id="stores"
+                  class="layui-input"
+                  readonly="readonly"
+                  style="text-align: left"
+                  value="中国/北京市/北京市/东城区"
+                />
+              </div>
+              <br />
+              <br />
+              <p><i class="icon-png arrow-etc"></i><span>订阅</span></p>
+              <p>即刻订阅！获取最新的产品、活动及折扣信息</p>
+              <br />
+              <p>
+                <input
+                  name="emailsubscribe"
+                  placeholder="再次输入您的电子邮件"
+                  class="layui-input"
+                />
+              </p>
+              <p>
+                <button class="layui-input" onclick="emailsubscribe()">
+                  订阅
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="problem">
+            <ul class="col">
+              <li class="title">常见问题</li>
+              <li>
+                <a href="/about/customerService/index" target="_blank">商品</a>
+              </li>
+              <li>
+                <a href="/about/DistributionService/index" target="_blank"
+                  >配送</a
+                >
+              </li>
+              <li>
+                <a href="/about/ShoppingProcess/index" target="_blank"
+                  >购物流程</a
+                >
+              </li>
+              <li>
+                <a href="/about/ReturnsService/index" target="_blank">退换货</a>
+              </li>
+              <li>
+                <a href="/about/shopTerms/index" target="_blank">购物条款</a>
+              </li>
+              <li>
+                <a href="/about/privateTerms/index" target="_blank">隐私条款</a>
+              </li>
+            </ul>
+            <ul class="col">
+              <li class="title">权益政策</li>
+              <li><a href="/about/rule/index" target="_blank">会员规则</a></li>
+              <li>
+                <a href="/about/MemberIntegral/index" target="_blank"
+                  >会员积分Q&amp;A</a
+                >
+              </li>
+              <li>
+                <a href="/about/debitCardCharter/index" target="_blank"
+                  >会员储值卡章程</a
+                >
+              </li>
+              <li>
+                <a href="/about/userAgreement/index" target="_blank"
+                  >会员储值卡用户协议</a
+                >
+              </li>
+              <li>
+                <a href="/about/giftCardClause/index" target="_blank"
+                  >礼品卡章程</a
+                >
+              </li>
+              <li>
+                <a href="/about/giftCard/index" target="_blank"
+                  >礼品卡Q&amp;A</a
+                >
+              </li>
+            </ul>
+            <div class="col-last">
+              <ul class="col">
+                <li class="title" target="_blank">公司信息</li>
+                <li>
+                  <a href="/about/brandinfo/index" target="_blank">关于品牌</a>
+                </li>
+                <li>
+                  <a href="/about/customer/index" target="_blank">客服</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/list.js"></script>
+  </body>
+</html>

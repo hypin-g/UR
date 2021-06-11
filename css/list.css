@@ -1,0 +1,204 @@
+img {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+.logo {
+  padding: 60px 40px 0px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  height: 90px;
+  width: 100%;
+}
+.logo img {
+  height: 30px;
+  width: 360px;
+  color: aliceblue;
+}
+.head-menu {
+  position: absolute;
+  right: 40px;
+  display: inline-block;
+  margin-top: -15px;
+}
+.head-menu span {
+  font-size: 14px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.left-menu1 {
+  width: 165px;
+  position: absolute;
+  top: 40px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.left-menu1 b {
+  padding-left: 20px;
+  font-size: 30px;
+}
+.left-menu1:hover .left-menu {
+  left: 0px;
+}
+.left-menu1:hover b {
+  display: none;
+}
+.left-menu {
+  font-size: 16px;
+  position: absolute;
+  top: 40px;
+  left: -165px;
+  width: 165px;
+  height: 100%;
+  z-index: 1;
+  padding-left: 30px;
+  color: #000;
+  background-color: #fff;
+}
+.left-menu ul li {
+  height: 35px;
+  color: #000;
+}
+.left-menu ul li ul {
+  display: none;
+  margin-left: 10px;
+}
+/* 商品列表 */
+.main {
+  margin-top: 100px;
+}
+.main .right-tab {
+  padding-right: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+.main .right-tab li {
+  padding-right: 15px;
+  font-size: 16px;
+  color: #5d5d5d;
+}
+.pagination {
+  margin: 0 auto;
+  width: 40%;
+  height: 40px;
+  border: 1px solid rgb(173, 172, 172);
+  margin: 20px auto;
+}
+.shoplist {
+  width: 1238px;
+  margin: 0 100px;
+  padding: 100px 0;
+}
+.shoplist img {
+  width: 293px;
+  height: 378px;
+  transition: all 0.3s;
+}
+
+.shopList-item {
+  display: inline-block;
+  padding: 0 5px;
+  margin-bottom: 100px;
+}
+
+.shopList-item a {
+  overflow: hidden;
+  position: relative;
+  width: 293px;
+  height: 378px;
+  display: block;
+}
+.shopList-item a:hover .ShoppingBag {
+  opacity: 1;
+}
+.shopList-item img:hover {
+  transform: scale(1.1);
+}
+/* 收藏 */
+.collection {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #000;
+}
+.ShoppingBag {
+  right: 20px;
+  top: 80px;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.bdrd {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 48px;
+}
+.yuanjia {
+  text-decoration: line-through;
+  color: #a1a1a1;
+}
+/* 预售 */
+.OpenToBooking {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 30px;
+}
+/* 列表文字部分 */
+.listtext {
+  text-align: center;
+  margin-top: 20px;
+}
+.listtext span {
+  font-weight: bold;
+}
+/* 页面底部 */
+.footer-con {
+  border-top: 1px solid #777;
+}
+.footer-main {
+  display: flex;
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 95%;
+}
+.footer-main .service li {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.footer-main .copyright {
+  margin: 120px 0 20px;
+  color: #777;
+  font-size: 12px;
+}
+.footer-main .sub {
+  margin: 0 150px;
+}
+.footer-main .sub .layui-input {
+  height: 38px;
+  width: 272px;
+  border: 1px solid #777;
+}
+.footer-main .problem {
+  display: flex;
+}
+.footer-main .problem .col li {
+  margin-bottom: 20px;
+}
+.problem .col {
+  display: block;
+  width: 168px;
+}
+.footer-main .problem .title {
+  font-size: 14px;
+  font-weight: bold;
+}
